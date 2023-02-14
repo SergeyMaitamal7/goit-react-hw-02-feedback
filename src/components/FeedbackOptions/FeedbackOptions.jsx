@@ -7,14 +7,14 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <>
       <ConstainerButton>
-        {arrKeys.map(opinion => (
+        {arrKeys.map(option => (
           <Button
-            key={opinion}
+            key={option}
             type="button"
-            name={opinion}
-            onClick={() => onLeaveFeedback(opinion)}
+            name={option}
+            onClick={() => onLeaveFeedback(option)}
           >
-            {opinion[0].toUpperCase() + opinion.slice(1)}
+            {option[0].toUpperCase() + option.slice(1)}
           </Button>
         ))}
       </ConstainerButton>
@@ -23,6 +23,6 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 };
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.array.isRequired,
+  options: PropTypes.object.isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };

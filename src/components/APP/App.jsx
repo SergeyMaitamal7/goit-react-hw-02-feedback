@@ -4,7 +4,6 @@ import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
 import { Section } from 'components/Section/Section';
 import { Constainer } from './App.styled';
 import { Notification } from 'components/Notification/Notification';
-import PropTypes from 'prop-types';
 
 export class App extends Component {
   state = {
